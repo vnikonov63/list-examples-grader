@@ -10,6 +10,7 @@ class CheckLength implements StringChecker {
 }
 
 public class TestListExamples {
+
   @Test
   public void testFilterGeneral() {
     List<String> input = Arrays.asList("lolo", "lol", "lilloo", "pi", "ro", "g");
@@ -18,11 +19,13 @@ public class TestListExamples {
     assertEquals(expectedOutput, ListExamples.filter(input, sc));
   }
 
-  @Test
-  public void mergeGeneral() {
-    List<String> input1 = Arrays.asList("a", "c", "e", "g");
-    List<String> input2 = Arrays.asList("b", "d", "f", "h");
-    List<String> expectedOutput = Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h");
-    assertEquals(expectedOutput, ListExamples.merge(input1, input2));
-  }
+  // @Test
+  // public void mergeGeneral() {
+  // List<String> input1 = Arrays.asList("a", "c", "e", "g");
+  // List<String> input2 = Arrays.asList("b", "d", "f", "h");
+  // List<String> expectedOutput = Arrays.asList("a", "b", "c", "d", "e", "f",
+  // "g", "h");
+  // assertEquals(expectedOutput, ListExamples.merge(input1, input2));
+  // }
+
 }
